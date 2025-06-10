@@ -1,0 +1,22 @@
+C# Access Modifiers — Visual Scope Diagram
+
++--------------------------------------------------------------+
+|                        public                                |
+|  (accessible from anywhere)                                  |
+|  +---------------------------------------------------------+ |
+|  |                protected internal                        | |
+|  |  (accessible from same assembly OR derived classes)      | |
+|  |  +---------------------------+   +--------------------+| |
+|  |  |         internal           |   |     protected        || |
+|  |  | (accessible within same    |   | (accessible in       || |
+|  |  | assembly/project)          |   | derived classes)     || |
+|  |  |                           |   |                      || |
+|  |  |  +---------------------+ |   |  +----------------+  || |
+|  |  |  |  private protected    | |   |  |    private      |  || |
+|  |  |  |(same class & derived  | |   |  | (same class only)| || |
+|  |  |  | classes in same       | |   |  |                  | || |
+|  |  |  | assembly)             | |   |  +----------------+  || |
+|  |  |  +---------------------+ |   |                      || |
+|  |  +---------------------------+   +--------------------+| |
+|  +---------------------------------------------------------+ |
++--------------------------------------------------------------+
