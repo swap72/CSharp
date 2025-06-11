@@ -1,0 +1,32 @@
+Collections Framework
+├── System.Collections (Non-Generic, Legacy)
+│   ├── IEnumerable (Interface)
+│   ├── ICollection (Interface)
+│   ├── IList (Interface)
+│   │   ├── ArrayList
+│   │   └── Stack
+│   ├── IDictionary (Interface)
+│   │   ├── Hashtable
+│   │   └── SortedList
+│   └── Queue
+└── System.Collections.Generic (Generic, Modern)
+    ├── IEnumerable<T> (Interface)
+    ├── ICollection<T> (Interface)
+    ├── IList<T> (Interface)
+    │   ├── List<T>
+    │   └── LinkedList<T>
+    ├── ISet<T> (Interface)
+    │   ├── HashSet<T>
+    │   ├── SortedSet<T>
+    │   └── LinkedHashSet<T> (Not built-in, custom implementation needed)
+    ├── IDictionary<TKey, TValue> (Interface)
+    │   ├── Dictionary<TKey, TValue>
+    │   ├── SortedDictionary<TKey, TValue>
+    │   └── SortedList<TKey, TValue>
+    ├── Queue<T>
+    ├── Stack<T>
+    └── Concurrent Collections (System.Collections.Concurrent)
+        ├── ConcurrentDictionary<TKey, TValue>
+        ├── ConcurrentQueue<T>
+        ├── ConcurrentStack<T>
+        └── ConcurrentBag<T>
